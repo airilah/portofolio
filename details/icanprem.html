@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio Details</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <!-- <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex flex-column justify-content-center">
+
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="../index.html#home"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="../index.html#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="../index.html#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="../index.html#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        <li><a href="../index.html#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li class="current">Portfolio Details</li>
+          </ol>
+        </nav>
+        <h1>Portfolio Details</h1>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="portfolio-details-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              },
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+
+            <div class="swiper-slide">
+              <img src="../assets/img/portfolio/icanprem.png" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="../assets/img/portfolio/product-1.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="../assets/img/portfolio/branding-1.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="../assets/img/portfolio/books-1.jpg" alt="">
+            </div>
+
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="row justify-content-between gy-4 mt-4">
+
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="portfolio-description">
+              <h2>Portfolio Description for Website Application I Can Premium</h2>
+              <h2>1. Project Overview</h2>
+                <p>
+                  <strong>I Can Premium</strong> is a web-based platform developed as a personal project using 
+                  <strong>Laravel 10</strong>, <strong>PHP 8.3</strong>, <strong>Bootstrap</strong>, and <strong>JavaScript</strong>.
+                  The primary goal of this system is to support the business of selling premium applications and account subscriptions 
+                  through a structured, secure, and user-friendly platform.
+                </p>
+                <p>
+                  This system is designed to:
+                </p>
+                <ul>
+                  <li>Provide clear product information (description, price, category, stock status).</li>
+                  <li>Facilitate transactions between buyers and sellers.</li>
+                  <li>Provide a shopping cart.</li>
+                  <li>Integrate payment features.</li>
+                  <li>Provide an admin dashboard to manage products, orders, and customer data.</li>
+                </ul>
+              <h2>2. Planning and Requirements Analysis</h2>
+
+              <h5>a. Problem Identification</h5>
+              <ul>
+                <li>Premium account sales were previously handled manually through chat, causing transaction records to be inconsistent.</li>
+                <li>Buyers often had difficulty comparing products because information was scattered across multiple places.</li>
+                <li>Payment confirmation and account delivery processes usually took time.</li>
+              </ul>
+
+              <h5>b. System Objectives</h5>
+              <ul>
+                <li>To build a centralized platform for displaying premium product information.</li>
+                <li>To simplify the purchase process, allowing users to browse, add to cart, and checkout easily.</li>
+                <li>To help sellers manage products, stock, order transactions, and payments efficiently.</li>
+              </ul>
+
+              <h5>c. Functional Requirements</h5>
+              <ul>
+                <li>User registration and login.</li>
+                <li>Product catalog page.</li>
+                <li>Product detail page (description, price, benefits).</li>
+                <li>Shopping cart (add, update, delete items).</li>
+                <li>Checkout process and input of order information.</li>
+                <li>Payment confirmation (upload proof or via gateway).</li>
+                <li>Order history page for customers.</li>
+                <li>Admin dashboard for managing products, orders, and users.</li>
+              </ul>
+
+              <h5>d. Non-Functional Requirements</h5>
+              <ul>
+                <li>Responsive interface on multiple devices using Bootstrap.</li>
+                <li>Fast performance and lightweight interface.</li>
+                <li>Basic security such as CSRF protection, validation, and authentication using Laravel.</li>
+                <li>Clean and scalable code structure.</li>
+              </ul>
+
+              <h2>3. System Design</h2>
+
+              <h5>a. Database Design</h5>
+              <p>Uses relational database (e.g., MySQL) with tables such as:</p>
+              <ul>
+                <li><code>users</code> — stores user information (buyers and admin).</li>
+                <li><code>products</code> — stores premium product details.</li>
+                <li><code>categories</code> — stores product categories (optional).</li>
+                <li><code>orders</code> — stores order records.</li>
+                <li><code>order_items</code> — stores items for each order.</li>
+                <li><code>payments</code> — stores payment transactions and status.</li>
+              </ul>
+
+              <h5>b. System Architecture</h5>
+              <p>Follows <strong>MVC (Model-View-Controller)</strong> architecture of Laravel:</p>
+              <ul>
+                <li><strong>Models</strong>: <code>User</code>, <code>Product</code>, <code>Order</code>, <code>OrderItem</code>, etc.</li>
+                <li>
+                  <strong>Controllers</strong>:
+                  <ul>
+                    <li><code>ProductController</code> — handles product display.</li>
+                    <li><code>CartController</code> — handles shopping cart logic.</li>
+                    <li><code>OrderController</code> — handles checkout process.</li>
+                    <li><code>Admin\ProductController</code>, <code>Admin\OrderController</code> — admin-side controllers.</li>
+                    <li>etc</li>
+                  </ul>
+                </li>
+                <li><strong>Views</strong>: created using Blade templates combined with Bootstrap layout.</li>
+              </ul>
+
+              <h5>c. UI/UX Design</h5>
+              <ul>
+                <li>Homepage showcasing featured products or promo items.</li>
+                <li>Navigation menu: Home, Product Catalog, Cart, Order History, Login/Register.</li>
+                <li>Admin interface focused on clarity and usability.</li>
+              </ul>
+              
+              <h2>4. Development and Implementation</h2>
+              <h5>a. User Authentication</h5>
+              <ul>
+                <li>Uses Laravel authentication system (e.g., Breeze/Fortify).</li>
+                <li>Supports register, login, logout, and restricted access.</li>
+              </ul>
+
+              <h5>b. Product Management</h5>
+              <ul>
+                <li>CRUD features for premium products.</li>
+                <li>Allows updating product prices, descriptions, stock, and availability.</li>
+              </ul>
+
+              <h5>c. Shopping Cart</h5>
+              <ul>
+                <li>User can add products into the cart and modify quantity.</li>
+                <li>Cart summary includes total calculation.</li>
+              </ul>
+
+              <h5>d. Checkout and Order Processing</h5>
+              <ul>
+                <li>System stores order data into <code>orders</code> and <code>order_items</code> table.</li>
+                <li>Order default status set to <em>pending</em>.</li>
+              </ul>
+
+              <h5>e. Payment Feature</h5>
+              <ul>
+                <li>Initially supports manual payment confirmation by uploading proof.</li>
+                <li>Can later be integrated with payment gateways.</li>
+              </ul>
+
+              <h5>f. Admin Dashboard</h5>
+              <ul>
+                <li>Admin can view incoming orders and change their status (pending, paid, delivered).</li>
+                <li>Admin can deliver account credentials after order verification.</li>
+              </ul>
+
+              <h2>5. Testing Phase</h2>
+
+              <h5>a. Functional Testing</h5>
+              <ul>
+                <li>Test user flow: register → login → browse → add to cart → checkout.</li>
+                <li>Verify order data stored correctly in database.</li>
+                <li>Test admin access to product and order management.</li>
+              </ul>
+
+              <h5>b. Validation Testing</h5>
+              <ul>
+                <li>Test invalid input submission to ensure proper error messages.</li>
+              </ul>
+
+              <h5>c. UI Testing</h5>
+              <ul>
+                <li>Check responsiveness on mobile, tablet, and desktop.</li>
+              </ul>
+
+              <h5>d. Security Testing</h5>
+              <ul>
+                <li>Ensure admin pages cannot be accessed without login.</li>
+                <li>CSRF protection working properly across forms.</li>
+              </ul>
+
+              <h2>6. Deployment Stage</h2>
+                <h5>a. Server Preparation</h5>
+                <ul>
+                  <li>Deploy to hosting/VPS supporting PHP 8.3 and MySQL.</li>
+                  <li>Upload project files using Git or FTP.</li>
+                </ul>
+
+                <h5>b. Server Configuration</h5>
+                <ul>
+                  <li>Configure <code>.env</code> (database, APP_URL, email settings, etc.).</li>
+                  <li>Run deployment commands
+                  </li>
+                  <li>Map document root to <code>public</code> folder.</li>
+                </ul>
+
+                <h5>c. Optimization</h5>
+                <ul>
+                  <li>Run performance commands
+                  </li>
+                  <li>Re-test full workflow on live deployment.</li>
+                </ul>
+
+            </div>
+          </div>
+          
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-info">
+              <h5>Project information</h5>
+              <ul>
+                <li><strong>Tittle</strong>I Can Premium</li>
+                <li><strong>Category</strong>Personal</li>
+                <li><strong>Years</strong>2024</li>
+                <li><strong>Project URL</strong> <a href="#">www.example.com</a></li>
+                <li><a href="#" class="btn-visit align-self-start">Visit Website</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <h3 class="sitename">Anas Khoiri Abdillah</h3>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://github.com/airilah" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/anaskhoiri" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.instagram.com/airillah_" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="mailto:anaskhoiri19@gmail.com" target="_blank">  <i class="bi bi-envelope"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">Anas Khoiri</strong> <span>All Rights Reserved</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio Details</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <!-- <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex flex-column justify-content-center">
+
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="../index.html#home"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="../index.html#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="../index.html#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="../index.html#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        <li><a href="../index.html#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li class="current">Portfolio Details</li>
+          </ol>
+        </nav>
+        <h1>Portfolio Details</h1>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="portfolio-details-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              },
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+
+            <div class="swiper-slide">
+              <img src="../assets/img/porto-details/kanker1.png" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="../assets/img/porto-details/kanker2.png" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="../assets/img/porto-details/kanker3.png" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="../assets/img/porto-details/kanker4.png" alt="">
+            </div>
+
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="row justify-content-between gy-4 mt-4">
+
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="portfolio-description">
+              <h2>Portfolio Description for Website Klasifikasi Kanker Kulit dengan VGG19</h2>
+              <h2>1. Project Overview</h2>
+                <p>
+                  This website is a web-based application for <strong>skin cancer classification from dermoscopic images</strong>.
+                  Users can upload a skin image in <code>.jpg / .jpeg</code> format, and the system will process the image using a
+                  <strong>VGG19 deep learning model</strong> to predict the class of the lesion.
+                </p>
+                <p>
+                  The application displays:
+                </p>
+                <ul>
+                  <li>The predicted class (for example: melanoma, melanocytic nevi, etc.).</li>
+                  <li>The confidence score (prediction probability in percent).</li>
+                  <li>A probability chart for each class.</li>
+                  <li>A research summary and the main program/code used in the project.</li>
+                </ul>
+                <p>
+                  This is a <strong>personal project</strong> developed using:
+                </p>
+                <ul>
+                  <li><strong>Python</strong></li>
+                  <li><strong>TensorFlow / Keras</strong> (VGG19)</li>
+                  <li><strong>NumPy, Pandas, Matplotlib, Seaborn</strong> for data processing and visualization</li>
+                  <li><strong>Streamlit</strong> (or a similar Python web framework) for the web interface</li>
+                </ul>
+
+                <h2>2. Background and Goals</h2>
+
+                <h5>a. Background</h5>
+                <p>
+                  Skin cancer, especially <strong>melanoma</strong>, is one of the fastest growing cancers worldwide. Early
+                  detection is extremely important, because if the cancer is detected early, the chances of survival can increase significantly.
+                </p>
+                <p>
+                  However, diagnosing skin cancer requires expertise and access to proper medical tools, which are not always available
+                  in every region. Therefore, computer-aided diagnosis using image classification models can support medical staff and
+                  also be used as an educational tool.
+                </p>
+
+                <h5>b. Project Goals</h5>
+                <ul>
+                  <li>
+                    To implement an image classification model using the <strong>VGG19 architecture</strong> to distinguish between
+                    different types of skin lesions.
+                  </li>
+                  <li>
+                    To apply <strong>Random Over Sampling (ROS)</strong> to handle <strong>class imbalance</strong> in the dataset.
+                  </li>
+                  <li>
+                    To present the research results in the form of an <strong>interactive website</strong> that:
+                    <ul>
+                      <li>Can be used for academic demonstration and education.</li>
+                      <li>Displays a <strong>research summary</strong>, <strong>research program/code</strong>, and a
+                        <strong>live image prediction feature</strong> in one application.</li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <h2>3. Data Preparation Phase</h2>
+
+                <h5>a. Dataset</h5>
+                <p>
+                  The project uses the <strong>HAM10000</strong> dataset (Human Against Machine with 10000 training images), which
+                  contains several types of skin lesions, such as:
+                </p>
+                <ul>
+                  <li>Actinic keratoses</li>
+                  <li>Basal cell carcinoma</li>
+                  <li>Benign keratosis-like lesions</li>
+                  <li>Dermatofibroma</li>
+                  <li>Melanocytic nevi</li>
+                  <li>Melanoma</li>
+                  <li>Vascular lesions</li>
+                </ul>
+
+                <h5>b. Image Preprocessing</h5>
+                <ul>
+                  <li>Resize all images to match the VGG19 input size (for example, <strong>224 x 224 pixels</strong>).</li>
+                  <li>Normalize pixel values (for example, scaling to the range 0–1).</li>
+                  <li>Split the dataset into:
+                    <ul>
+                      <li><strong>Training set</strong></li>
+                      <li><strong>Validation set</strong></li>
+                      <li><strong>Test set</strong></li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <h5>C. Handling Class Imbalance</h5>
+                <p>
+                  Because the number of images per class is not balanced, the project applies:
+                  <strong>Random Over Sampling (ROS)</strong> to duplicate samples from minority classes until the class distribution
+                  becomes more balanced.
+                </p>
+                <p>
+                  This helps the model avoid bias towards majority classes and improves its ability to recognize minority classes
+                  such as melanoma.
+                </p>
+
+                <h2>4. VGG19 Model Design</h2>
+
+                <h5>a. Transfer Learning with VGG19</h5>
+                <ul>
+                  <li>Import the <strong>VGG19</strong> model from <code>tensorflow.keras.applications.vgg19</code>.</li>
+                  <li>Use <strong>ImageNet pretrained weights</strong> to leverage previously learned visual features.</li>
+                  <li>
+                    The convolutional base of VGG19 is often <strong>frozen</strong> (not trainable) in the initial training phase to retain
+                    general image features such as edges and textures.
+                  </li>
+                </ul>
+
+                <h5>b. Architecture Adaptation</h5>
+                <ul>
+                  <li>Add a <strong>Global Average Pooling</strong> or <strong>Flatten</strong> layer after the VGG19 feature extractor.</li>
+                  <li>
+                    Add several <strong>Dense</strong> layers with <strong>ReLU</strong> activation and
+                    <strong>Dropout</strong> to reduce overfitting.
+                  </li>
+                  <li>
+                    Use a <strong>Softmax</strong> output layer with the number of neurons equal to the number of classes in the dataset.
+                  </li>
+                </ul>
+
+                <h5>c. Training Configuration</h5>
+                <ul>
+                  <li>Loss function: <strong>Categorical Crossentropy</strong>.</li>
+                  <li>Optimizer: for example, <strong>Adam</strong>.</li>
+                  <li>Metrics: <strong>Accuracy</strong>, and optionally <strong>Precision</strong>, <strong>Recall</strong>, <strong>AUC</strong>.</li>
+                  <li>
+                    Callbacks such as:
+                    <ul>
+                      <li><strong>ModelCheckpoint</strong> &mdash; to save the best performing model.</li>
+                      <li><strong>EarlyStopping</strong> &mdash; to stop training when validation performance stops improving.</li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <h2>5. Training and Evaluation</h2>
+
+                <h5>a. Training</h5>
+                <ul>
+                  <li>The model is trained on the training set (after applying ROS) for several epochs.</li>
+                  <li>
+                    During training, training and validation <strong>loss</strong> and <strong>accuracy</strong> are monitored to
+                    check whether the model is learning properly.
+                  </li>
+                  <li>
+                    The best model is saved to a file, for example:
+                    <code>model_vgg19_skin_cancer.h5</code>.
+                  </li>
+                </ul>
+
+                <h5>b. Evaluation</h5>
+                <ul>
+                  <li>The final model is evaluated using the <strong>test set</strong>, which was not used during training.</li>
+                  <li>Metrics such as accuracy, confusion matrix, and classification report (precision, recall, F1-score) are calculated.</li>
+                  <li>
+                    From the evaluation, we can see how well the model distinguishes between melanoma and non-melanoma lesions and
+                    other classes.
+                  </li>
+                </ul>
+
+                <h2>6. Website / Web Application Development</h2>
+
+                <p>
+                  The website interface includes several main menus, as illustrated by the screenshots:
+                </p>
+
+                <h5>a. Research Summary</h5>
+                <ul>
+                  <li>Displays the research title.</li>
+                  <li>Presents background, problem statement, and proposed solution.</li>
+                  <li>Explains the use of <strong>Random Over Sampling (ROS)</strong> and <strong>VGG19</strong> as the main methods.</li>
+                  <li>
+                    This page is written in a structure similar to an introduction chapter in a thesis or journal, but shown directly in the web page.
+                  </li>
+                </ul>
+
+                <h5>b. Research Program</h5>
+                <ul>
+                  <li>Displays the main Python code used in the research.</li>
+                  <li>
+                    Includes:
+                    <ul>
+                      <li>Library imports (NumPy, Pandas, Matplotlib, Seaborn, TensorFlow, Keras, etc.).</li>
+                      <li>Data preprocessing, model creation, training, and evaluation sections.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    This page serves for documentation and transparency, especially for academic or research purposes.
+                  </li>
+                </ul>
+
+                <h5>c. Image Prediction</h5>
+                <ul>
+                  <li>Provides a file upload component where users can drag and drop or browse a skin image.</li>
+                  <li>The uploaded image is displayed on the page as a preview.</li>
+                  <li>After processing, the system shows:
+                    <ul>
+                      <li><strong>Prediction Result</strong>: the predicted class (for example: melanoma).</li>
+                      <li><strong>Confidence Level</strong>: e.g. 79.31%.</li>
+                      <li>
+                        <strong>Probability for Each Class</strong>: a bar chart showing probabilities for all classes so that the user
+                        can compare them visually.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <h2>7. Model Integration with the Website</h2>
+
+                <h5>a. Loading the Model</h5>
+                <ul>
+                  <li>The trained VGG19 model is loaded when the web application starts.</li>
+                  <li>This avoids reloading the model every time a user makes a prediction, improving performance.</li>
+                </ul>
+
+                <h5>b. Prediction Function</h5>
+                <ul>
+                  <li>When a user uploads an image:
+                    <ul>
+                      <li>The image is read using PIL or OpenCV.</li>
+                      <li>The image is resized to the model input size.</li>
+                      <li>Pixel values are normalized and converted into a NumPy array with batch dimension.</li>
+                      <li>The image is passed to <code>model.predict()</code> to obtain a probability vector.</li>
+                    </ul>
+                  </li>
+                  <li>The index of the highest probability is taken as the predicted class.</li>
+                  <li>The corresponding probability is converted into a percentage as the confidence score.</li>
+                </ul>
+
+                <h5>c. Visualization</h5>
+                <ul>
+                  <li>
+                    The prediction result and confidence are shown as text, along with the original uploaded image at the top of the page.
+                  </li>
+                  <li>
+                    A bar chart of the class probabilities is created using Matplotlib or Plotly and rendered in the web page to help users
+                    interpret the model output.
+                  </li>
+                </ul>
+
+                <h2>8. Deployment Phase</h2>
+
+                <p>
+                  After the application runs well locally, the next step is <strong>deployment</strong> so the application can be accessed online.
+                </p>
+
+                <h5>a. Preparing the Repository</h5>
+                <ul>
+                  <li>All project files (Python scripts, trained model, and assets) are organized in a single project folder.</li>
+                  <li>The folder is pushed to a <strong>GitHub</strong> repository.</li>
+                  <li>A <code>requirements.txt</code> file is created to list all required Python libraries.</li>
+                  <li>If needed, additional system dependencies are listed in a <code>packages.txt</code> file.</li>
+                </ul>
+
+                <h5>b. Deploying to a Hosting Platform</h5>
+                <ul>
+                  <li>The GitHub repository is connected to a hosting platform such as <strong>Streamlit Cloud</strong>, Render, or another service.</li>
+                  <li>The main application file (for example, <code>app.py</code>) is specified as the entry point.</li>
+                  <li>
+                    The hosting platform installs all dependencies from <code>requirements.txt</code> and runs the application,
+                    providing a public URL.
+                  </li>
+                </ul>
+
+                <h5>c. Testing on the Server</h5>
+                <ul>
+                  <li>Access the application via the public URL.</li>
+                  <li>Test:
+                    <ul>
+                      <li>Navigation between Research Summary, Research Program, and Image Prediction pages.</li>
+                      <li>Image upload and preview.</li>
+                      <li>Model prediction and probability chart.</li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <h5>d. Optimization</h5>
+                <ul>
+                  <li>Ensure the model is loaded only once at startup to minimize prediction latency.</li>
+                  <li>Consider model size optimization if loading time is too long.</li>
+                  <li>
+                    Add a clear note that the application is intended for <strong>research and educational purposes only</strong> and
+                    is not a replacement for professional medical diagnosis.
+                  </li>
+                </ul>
+
+            </div>
+          </div>
+          
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-info">
+              <h5>Project information</h5>
+              <ul>
+                <li><strong>Tittle</strong>Website Klasifikasi Kanker Kulit dengan VGG19</li>
+                <li><strong>Category</strong>Personal</li>
+                <li><strong>Years</strong>2025</li>
+                <li><strong>Project URL</strong> <a href="#">www.example.com</a></li>
+                <li><a href="#" class="btn-visit align-self-start">Visit Website</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <h3 class="sitename">Anas Khoiri Abdillah</h3>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://github.com/airilah" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/anaskhoiri" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.instagram.com/airillah_" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="mailto:anaskhoiri19@gmail.com" target="_blank">  <i class="bi bi-envelope"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">Anas Khoiri</strong> <span>All Rights Reserved</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

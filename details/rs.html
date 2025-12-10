@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio Details</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <!-- <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex flex-column justify-content-center">
+
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="../index.html#home"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="../index.html#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="../index.html#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="../index.html#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        <li><a href="../index.html#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li class="current">Portfolio Details</li>
+          </ol>
+        </nav>
+        <h1>Portfolio Details</h1>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="portfolio-details-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              },
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+
+            <div class="swiper-slide">
+              <img src="../assets/img/porto-details/rs1.png" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="../assets/img/porto-details/rs2.png" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="../assets/img/porto-details/rs3.png" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="../assets/img/porto-details/rs4.png" alt="">
+            </div>
+
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="row justify-content-between gy-4 mt-4">
+
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="portfolio-description">
+              <h2>Portfolio Description for Website Sistem Informasi Rumah Sakit Telang Sehat</h2>
+                <h2>1. System Overview</h2>
+                <p>
+                  The Hospital Information System is a personal web-based project developed to support digital hospital administration.
+                  This application manages data related to doctors, nurses, guardians, patient profiles, and hospital rooms. 
+                  The system is built using the <strong>Laravel framework</strong>, which provides modern structure, security, and scalability.
+                </p>
+
+                <p>The main objectives of this project include:</p>
+                <ul>
+                  <li>Digitizing patient and medical staff records</li>
+                  <li>Managing treatment records efficiently</li>
+                  <li>Providing user-based access control</li>
+                  <li>Improving data integrity and hospital workflow documentation</li>
+                </ul>
+
+                <h2>2. User Roles (Actors)</h2>
+                <p>This system consists of three main user actors, each with specific responsibilities:</p>
+
+                <h5>🧑‍💼 Admin</h5>
+                <ul>
+                  <li>Manages all system data</li>
+                  <li>Supervises data entry from nurses and doctors</li>
+                  <li>Handles patient discharge status</li>
+                  <li>Updates room availability</li>
+                </ul>
+
+                <h5>🧑‍⚕️ Doctor</h5>
+                <ul>
+                  <li>Views patient information</li>
+                  <li>Adds medical treatment notes</li>
+                  <li>Communicates with admin through internal notification</li>
+                  <li>Updates patient's medical progress</li>
+                </ul>
+
+                <h5>👩‍⚕️ Nurse</h5>
+                <ul>
+                  <li>Records patient condition updates</li>
+                  <li>Assists with treatment records provided by doctors</li>
+                  <li>Sends requests or notifications to admin</li>
+                  <li>Monitors patient room changes</li>
+                </ul>
+
+                <h2>3. System Planning Process</h2>
+
+                <h5>a. Initial Problems Identified</h5>
+                <ul>
+                  <li>Manual patient data recording</li>
+                  <li>No centralized database for medical records</li>
+                  <li>Difficulty tracking treatment changes</li>
+                  <li>Room allocation not well documented</li>
+                </ul>
+
+                <h5>b. Planned Solutions</h5>
+                <ul>
+                  <li>Build structured patient data management</li>
+                  <li>Provide digital access to doctors and nurses</li>
+                  <li>Store treatment progress safely in a database</li>
+                  <li>Develop features for communication and notification handling</li>
+                </ul>
+
+                <h2>4. System Designing</h2>
+
+                <h5>a. Database Structure</h5>
+                <p>The database consists of several important tables:</p>
+                <ul>
+                    <li>users: Stores login credentials for admin, nurse, doctor</li>
+                    <li>patients: Contains patient biodata, treatment notes, medical status</li>
+                    <li>doctors: Stores doctor profiles and specialization</li>
+                    <li>nurses: Contains nurse information</li>
+                    <li>guardians: Stores guardian data of each patient</li>
+                    <li>rooms: Contains room names, types, and patient allocation</li>
+                </ul>
+                <h5>b. Features Designed</h5>
+                <ul>
+                  <li>CRUD (Create, Read, Update, Delete) patient records</li>
+                  <li>User-based dashboard interface</li>
+                  <li>Notification feature for system requests</li>
+                  <li>Status feature for recovered patients</li>
+                  <li>Room management & availability updates</li>
+                </ul>
+
+                <h2>5. Development Phase Using Laravel</h2>
+
+                <h5>Backend Development</h5>
+                <ul>
+                  <li>Data processed using Laravel Controllers</li>
+                  <li>Authentication implemented using Laravel Auth</li>
+                  <li>Middleware applied to separate user access</li>
+                  <li>Validation on form submission</li>
+                </ul>
+
+                <h5>Frontend Development</h5>
+                <ul>
+                  <li>Blade templating system used</li>
+                  <li>Bootstrap and custom CSS styling for designs</li>
+                  <li>Responsive layout for hospital data listings</li>
+                </ul>
+
+                <h2>6. System Interface Summary</h2>
+
+                <h5>Dashboard View</h5>
+                <ul>
+                  <li>Displays hospital introduction</li>
+                  <li>Acts as user navigation hub</li>
+                </ul>
+
+                <h5>Patient Data Page</h5>
+                <ul>
+                  <li>Viewing active patient lists</li>
+                  <li>Updating treatment notes</li>
+                  <li>Marking a patient as recovered</li>
+                </ul>
+
+                <h5>Notification Page</h5>
+                <ul>
+                  <li>Requests from doctors and nurses displayed</li>
+                  <li>Admin resolves notifications through action buttons</li>
+                </ul>
+
+                <h5>Room Data Page</h5>
+                <ul>
+                  <li>Room names and types</li>
+                  <li>Patient allocation in each room</li>
+                  <li>Availability management</li>
+                </ul>
+
+                <h2>7. Testing Stage</h2>
+
+                <h5>Functionality Testing:</h5>
+                <ul>
+                  <li>Role-based login verified</li>
+                  <li>CRUD operations tested successfully</li>
+                  <li>Room switching function validated</li>
+                  <li>Notification process tested</li>
+                </ul>
+
+                <h5>UI/UX Testing</h5>
+                <ul>
+                  <li>Menus are responsive and intuitive</li>
+                  <li>User flow simple for medical staff</li>
+                  <li>Data table navigation is easy to use</li>
+                </ul>
+
+            </div>
+          </div>
+          
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-info">
+              <h5>Project information</h5>
+              <ul>
+                <li><strong>Tittle</strong>Website Sistem Informasi Rumah Sakit Telang Sehat</li>
+                <li><strong>Category</strong>Personal</li>
+                <li><strong>Years</strong>2022</li>
+                <li><strong>Project URL</strong> <a href="#">www.example.com</a></li>
+                <li><a href="#" class="btn-visit align-self-start">Visit Website</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <h3 class="sitename">Anas Khoiri Abdillah</h3>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://github.com/airilah" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/anaskhoiri" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.instagram.com/airillah_" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="mailto:anaskhoiri19@gmail.com" target="_blank">  <i class="bi bi-envelope"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">Anas Khoiri</strong> <span>All Rights Reserved</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

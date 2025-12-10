@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio Details</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <!-- <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex flex-column justify-content-center">
+
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="../index.html#home"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="../index.html#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="../index.html#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="../index.html#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        <li><a href="../index.html#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li class="current">Portfolio Details</li>
+          </ol>
+        </nav>
+        <h1>Portfolio Details</h1>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="portfolio-details-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              },
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+
+            <div class="swiper-slide">
+              <img src="../assets/img/porto-details/beasiswaku1.png" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="../assets/img/porto-details/beasiswaku2.png" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="../assets/img/porto-details/beasiswaku3.png" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="../assets/img/porto-details/beasiswaku4.png" alt="">
+            </div>
+
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="row justify-content-between gy-4 mt-4">
+
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="portfolio-description">
+              <h2>Portfolio Description for Website Application PKP-RI Bangkalan</h2>
+              <h2>1. Project Overview</h2>
+              <p>
+                The PKP-RI Bangkalan hall reservation website is a web-based platform developed as a 
+                <strong>team project</strong> using <strong>Laravel 10</strong>, <strong>PHP 8.3</strong>, 
+                <strong>Bootstrap</strong>, and <strong>JavaScript</strong>. 
+              </p>
+              <p>
+                This application is designed to support the business process of hall rental at PKP-RI Bangkalan for various events,
+                such as seminars, organizational meetings, family gatherings, training, and social activities. The system provides 
+                an online booking platform that can be accessed by both customers and administrators.
+              </p>
+
+              <h2>2. Project Goals</h2>
+              <h5>a. Problems in the Previous Process</h5>
+              <ul>
+                <li>Reservations were handled manually via phone or in-person visits.</li>
+                <li>Hall availability schedules were not clearly visible to customers.</li>
+                <li>Renter data and reservations were recorded manually and prone to errors.</li>
+                <li>Administrators had to manually manage bookings, which was time-consuming.</li>
+              </ul>
+
+              <h5>b. Objectives of the System</h5>
+              <ul>
+                <li>Provide an online booking platform that is accessible anytime and anywhere.</li>
+                <li>Display hall availability schedules more clearly and transparently.</li>
+                <li>Help PKP-RI staff manage customer booking data in a structured way.</li>
+                <li>Automatically store booking and transaction history in a database.</li>
+              </ul>
+
+              <h2>3. Requirements Analysis</h2>
+
+              <h5>a. Functional Requirements</h5>
+              <h7>For Customers</h7>
+              <ul>
+                <li>View hall information, facilities, and rental prices.</li>
+                <li>View the availability schedule for each hall.</li>
+                <li>Create an account or log in before making a reservation.</li>
+                <li>Make reservations by selecting date, time, and type of event.</li>
+                <li>Submit payment or upload payment proof.</li>
+                <li>View the status of their reservations.</li>
+              </ul>
+
+              <h7>For Administrators</h7>
+              <ul>
+                <li>Manage hall data (name, capacity, facilities, price, and status).</li>
+                <li>View and manage incoming bookings.</li>
+                <li>Update booking status (pending, approved, rejected, completed).</li>
+                <li>Manage customer data when needed.</li>
+                <li>View booking and transaction reports.</li>
+              </ul>
+
+              <h5>b. Non-Functional Requirements</h5>
+              <ul>
+                <li>Responsive design that works well on mobile and desktop devices (using Bootstrap).</li>
+                <li>Secure authentication and authorization using Laravel's features.</li>
+                <li>Stable performance and efficient database access.</li>
+                <li>Scalable structure to support future feature additions, such as payment gateway integration.</li>
+              </ul>
+
+              <h2>4. System Design</h2>
+
+              <h5>a. Database Design</h5>
+              <p>
+                The system uses a relational database (such as MySQL) with several main tables:
+              </p>
+              <ul>
+                <li><code>users</code> — stores customer and admin account data.</li>
+                <li><code>buildings</code> or <code>halls</code> — stores hall data (name, capacity, facilities, price).</li>
+                <li><code>bookings</code> — stores booking records made by customers.</li>
+                <li><code>payments</code> — stores payment information and uploaded payment proof.</li>
+                <li><code>time_slots</code> — stores detailed booking time frames (if used).</li>
+                <li>etc</li>
+              </ul>
+              <p>
+                Relationships between tables are defined using foreign keys to maintain data integrity and consistency.
+              </p>
+
+              <h5>b. Architecture Design</h5>
+              <p>
+                The application follows the <strong>MVC (Model-View-Controller)</strong> architecture using Laravel:
+              </p>
+              <ul>
+                <li><strong>Models</strong>: <code>User</code>, <code>Hall</code>, <code>Booking</code>, <code>Payment</code>, etc.</li>
+                <li>
+                  <strong>Controllers</strong>:
+                  <ul>
+                    <li><code>BookingController</code> — handles booking logic and workflows.</li>
+                    <li><code>HallController</code> — manages hall data and details.</li>
+                    <li><code>AdminController</code> — manages admin dashboard, reports, and approvals.</li>
+                    <li>etc</li>
+                  </ul>
+                </li>
+                <li><strong>Views</strong>: created using Blade templates combined with Bootstrap components.</li>
+              </ul>
+
+              <h5>c. UI/UX Design</h5>
+              <ul>
+                <li>Designing a homepage that introduces PKP-RI Bangkalan and the available halls.</li>
+                <li>Providing a clear navigation menu: Home, Halls, Schedule, Booking, Login/Register.</li>
+                <li>Designing a booking form that is simple and easy to understand.</li>
+                <li>Designing an admin interface for viewing tables of bookings and managing their status.</li>
+              </ul>
+
+              <h2>5. Implementation Phase</h2>
+
+              <h5>a. Backend Implementation</h5>
+              <ul>
+                <li>Setting up routes for customer and admin roles.</li>
+                <li>Using middleware to protect admin-only pages.</li>
+                <li>Using Laravel migrations and Eloquent ORM for database operations.</li>
+                <li>Implementing input validation to ensure correct and safe data.</li>
+                <li>Implementing booking logic, including checking hall availability based on selected date and time.</li>
+              </ul>
+
+              <h5>b. Frontend Implementation</h5>
+              <ul>
+                <li>Building page layouts using Blade templates and Bootstrap grid system.</li>
+                <li>Ensuring responsive design across different screen sizes.</li>
+                <li>Using JavaScript for interactive elements such as:
+                  <ul>
+                    <li>Date picker or calendar for selecting booking dates.</li>
+                    <li>Dynamic display of booking status and notifications.</li>
+                    <li>Additional client-side validation.</li>
+                  </ul>
+                </li>
+              </ul>
+
+              <h5>c. Team Collaboration</h5>
+              <ul>
+                <li>Work was divided among team members: backend, frontend, database, and testing.</li>
+                <li>Using Git and a shared repository to manage source code and collaborate effectively.</li>
+                <li>Regular discussions to align features, handle bugs, and improve UI/UX.</li>
+              </ul>
+
+              <h2>6. Testing Phase</h2>
+
+              <h5>a. Unit and Functional Testing</h5>
+              <ul>
+                <li>Testing booking creation with valid and invalid data.</li>
+                <li>Testing date and time validation to avoid double-booking.</li>
+                <li>Testing login, logout, registration, and role-based access.</li>
+              </ul>
+
+              <h5>b. End-to-End User Flow Testing</h5>
+              <ul>
+                <li>Customer scenario: register → login → select hall → choose date and time → submit booking → upload payment proof → check booking status.</li>
+                <li>Admin scenario: login → view incoming bookings → verify payment → approve or reject booking → update booking status.</li>
+              </ul>
+
+              <h5>c. Usability Testing</h5>
+              <ul>
+                <li>Testing the system with several trial users to evaluate ease of use.</li>
+                <li>Improving date format display and booking status indicators based on feedback.</li>
+              </ul>
+
+              <h2>7. Deployment Phase</h2>
+
+              <h5>a. Server and Hosting Preparation</h5>
+              <ul>
+                <li>Choosing hosting or a VPS that supports PHP 8.3 and MySQL.</li>
+                <li>Configuring a domain or subdomain for the PKP-RI hall reservation system.</li>
+              </ul>
+
+              <h5>b. Deployment Steps</h5>
+              <ul>
+                <li>Uploading the Laravel project files via Git or FTP.</li>
+                <li>Setting up the <code>.env</code> configuration file for the production environment (database, APP_URL, etc.).</li>
+                <li>Running the following commands on the server
+                </li>
+                <li>Pointing the web server's document root to the <code>public</code> directory of the Laravel project.</li>
+              </ul>
+
+              <h5>c. Optimization and Final Testing</h5>
+              <ul>
+                <li>Running optimization commands
+                </li>
+                <li>Retesting key user flows on the live server:
+                  <ul>
+                    <li>Customer registration and login.</li>
+                    <li>Hall browsing and booking creation.</li>
+                    <li>Payment proof upload and status checking.</li>
+                    <li>Admin verification and approval process.</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-info">
+              <h5>Project information</h5>
+              <ul>
+                <li><strong>Tittle</strong>Website Beasiswaku</li>
+                <li><strong>Category</strong>Team</li>
+                <li><strong>Years</strong>2023</li>
+                <li><strong>Project URL</strong> <a href="#">www.example.com</a></li>
+                <li><a href="#" class="btn-visit align-self-start">Visit Website</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <h3 class="sitename">Anas Khoiri Abdillah</h3>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://github.com/airilah" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/anaskhoiri" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.instagram.com/airillah_" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="mailto:anaskhoiri19@gmail.com" target="_blank">  <i class="bi bi-envelope"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">Anas Khoiri</strong> <span>All Rights Reserved</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
