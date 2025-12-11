@@ -600,36 +600,37 @@
           </div>
 
           <div class="col-lg-8">
-            <form action="https://formspree.io/f/mwpgwbkl" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form id="contact-form" action="https://formspree.io/f/mwpgwbkl" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
-
+          
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                 </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+          
+                <div class="col-md-6">
+                  <input type="email" name="email" class="form-control" placeholder="Your Email" required>
                 </div>
-
+          
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  <input type="text" name="subject" class="form-control" placeholder="Subject" required>
                 </div>
-
+          
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  <textarea name="message" class="form-control" rows="6" placeholder="Message" required></textarea>
                 </div>
-
+          
                 <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
+                  <div class="loading" style="display:none;">Loading...</div>
+                  <div class="error-message" style="display:none;color:red;"></div>
+                  <div class="sent-message" style="display:none;color:green;">Your message has been sent. Thank you!</div>
+          
                   <button type="submit">Send Message</button>
                 </div>
-
+          
               </div>
             </form>
-          </div><!-- End Contact Form -->
+          </div>
+
 
         </div>
 
@@ -674,6 +675,63 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('.php-email-form');
+    if (!form) return;
+  
+    const loadingEl = form.querySelector('.loading');
+    const errorEl   = form.querySelector('.error-message');
+    const successEl = form.querySelector('.sent-message');
+  
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      errorEl.textContent = '';
+      successEl.style.display = 'none';
+      loadingEl.style.display = 'block';
+  
+      const url = form.action;
+      const formData = new FormData(form);
+  
+      fetch(url, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json' // minta JSON supaya response.json() valid
+        }
+      })
+      .then(response => response.json())
+      .then(data => {
+        loadingEl.style.display = 'none';
+  
+        // Formspree memberi { ok: true, next: "/thanks?..." } saat sukses
+        if (data.ok) {
+          // jika Formspree memberikan 'next' redirect
+          if (data.next) {
+            window.location.href = data.next;
+            return;
+          }
+          // atau tampilkan pesan sukses
+          successEl.style.display = 'block';
+          form.reset();
+        } else {
+          // kadang error detail di data; tampilkan pesan
+          const msg = data.error || 'Sorry, there was an error sending the message.';
+          errorEl.textContent = msg;
+          errorEl.style.display = 'block';
+        }
+      })
+      .catch((err) => {
+        loadingEl.style.display = 'none';
+        errorEl.textContent = 'Could not send message. Please try again later.';
+        errorEl.style.display = 'block';
+        console.error('Form submit error:', err);
+      });
+    });
+  });
+  </script>
+
 
 </body>
 
