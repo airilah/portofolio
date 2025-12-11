@@ -536,6 +536,16 @@ section,
   z-index: 1;
 }
 
+@media (max-width: 576px) {
+
+  .hero img {
+    object-position: 78% center; /* geser fokus gambar ke kiri */
+  }
+
+}
+
+
+
 .hero:before {
   content: "";
   background: color-mix(in srgb, var(--background-color), transparent 30%);

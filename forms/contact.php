@@ -1,51 +1,65 @@
 <?php
-// forms/contact.php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
 
 // Email tujuan
 $receiving_email_address = 'anaskhoiri19@gmail.com';
 
-// Cek kalau request-nya adalah POST
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-    // Ambil dan amankan data dari form
-    $name    = isset($_POST['name']) ? trim($_POST['name']) : '';
-    $email   = isset($_POST['email']) ? trim($_POST['email']) : '';
-    $subject = isset($_POST['subject']) ? trim($_POST['subject']) : 'No Subject';
-    $message = isset($_POST['message']) ? trim($_POST['message']) : '';
+    $name    = trim($_POST['name'] ?? '');
+    $email   = trim($_POST['email'] ?? '');
+    $subject = trim($_POST['subject'] ?? 'No Subject');
+    $message = trim($_POST['message'] ?? '');
 
-    // Validasi sederhana
-    if ($name === '' || $email === '' || $message === '') {
-        echo 'Please fill in all required fields.';
+    if ($name == '' || $email == '' || $message == '') {
+        echo "Please fill all required fields.";
         exit;
     }
 
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo 'Invalid email format.';
+        echo "Invalid email format.";
         exit;
     }
 
-    // Susun isi email
-    $email_subject = "Contact Form: " . $subject;
-    $email_body    = "You have received a new message from the contact form.\n\n"
-                   . "Name   : $name\n"
-                   . "Email  : $email\n"
-                   . "Subject: $subject\n\n"
-                   . "Message:\n$message\n";
+    // Mulai PHPMailer
+    $mail = new PHPMailer(true);
 
-    // Header email
-    $headers  = "From: $name <$email>\r\n";
-    $headers .= "Reply-To: $email\r\n";
+    try {
+        // SMTP Settings
+        $mail->isSMTP();
+        $mail->Host       = 'smtp.gmail.com';
+        $mail->SMTPAuth   = true;
+        $mail->Username   = 'anaskhoiri19@gmail.com';
+        $mail->Password   = 'powl icyj apni lfqx';
+        $mail->SMTPSecure = 'tls';
+        $mail->Port       = 587;
 
-    // Kirim email (catatan: mail() sering tidak jalan di localhost tanpa konfigurasi mail server)
-    if (mail($receiving_email_address, $email_subject, $email_body, $headers)) {
-        // BootstrapMade JS biasanya menganggap "OK" sebagai sukses
-        echo 'OK';
-    } else {
-        echo 'Failed to send email. Please try again later.';
+        // Email pengirim & penerima
+        $mail->setFrom($email, $name);
+        $mail->addAddress($receiving_email_address);
+
+        // Isi email
+        $mail->Subject = "Contact Form: $subject";
+        $mail->Body    =
+            "Name: $name\n" .
+            "Email: $email\n" .
+            "Subject: $subject\n\n" .
+            "Message:\n$message\n";
+
+        // Kirim
+        $mail->send();
+        echo "OK";
+
+    } catch (Exception $e) {
+        echo "Email failed: {$mail->ErrorInfo}";
     }
 
 } else {
-    // Jika file diakses langsung tanpa POST
-    echo 'Invalid request method.';
+    echo "Invalid Request Method";
 }
 ?>
