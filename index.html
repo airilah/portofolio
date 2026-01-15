@@ -56,13 +56,32 @@
       <div class="container" data-aos="zoom-out">
         <div class="row justify-content-center">
           <div class="col-lg-9">
-            <h2>Anas Khoiri Abdillah</h2>
-            <p>I'm <span class="typed" data-typed-items="Front-End Developer, Back-End Developer">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-            <div class="social-links">
+            <h2 class="ps-2">Anas Khoiri Abdillah</h2>
+
+            <p class="ps-2">
+              I'm <span id="typedText" class="typed"></span>
+            </p>
+
+            <!-- MODE SWITCH -->
+            <div class="mode-switch my-4">
+              <label class="switch">
+                <input type="checkbox" id="modeToggle">
+                <span class="slider"></span>
+              </label>
+            </div>
+            <!-- ===== WEB DEVELOPER MODE ===== -->
+            <div class="social-links mt-3 ps-2 mode-web">
               <a href="https://github.com/airilah" target="_blank"><i class="bi bi-github"></i></a>
               <a href="https://www.linkedin.com/in/anaskhoiri" target="_blank"><i class="bi bi-linkedin"></i></a>
               <a href="https://www.instagram.com/airillah_" target="_blank"><i class="bi bi-instagram"></i></a>
-              <a href="mailto:anaskhoiri19@gmail.com" target="_blank">  <i class="bi bi-envelope"></i></a>
+              <a href="mailto:anaskhoiri19@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
+            </div>
+            <!-- ===== SOCIAL MEDIA SPECIALIST MODE ===== -->
+            <div class="social-links mt-3 ps-2 mode-social">
+              <a href="https://www.instagram.com/airillah_" target="_blank"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.youtube.com/@anaskhoiri" target="_blank"><i class="bi bi-youtube"></i></a>
+              <a href="https://www.tiktok.com/@airillah_" target="_blank"><i class="bi bi-tiktok"></i></a>
+              <a href="mailto:anaskhoiri19@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
             </div>
           </div>
         </div>
@@ -86,15 +105,23 @@
           </div>
           <div class="col-lg-8 content">
             <h2>Informatics Engineering Graduate</h2>
-            <p class="fst-italic py-1">
+            <p class="fst-italic py-1 mode-web">
               with a keen interest in Full-Stack Development and Data Science. Experienced in
               web development, including front-end technologies such as HTML and CSS, and back-end development using
               Laravel, and database tools such as MySQL, phpMyAdmin, and Oracle. I have strong skills and interests in
               Python programming and am committed to growing both technically and professionally through real-world
               applications and collaborations. Eager to contribute in a challenging role where I can apply my technical
-              expertise to develop innovative digital solutions,reflected in several dynamic website projects I have developed
+              expertise to develop innovative digital solutions, reflected in several dynamic website projects I have developed
               to fulfill my responsibilities while interning at related institutions.
             </p>
+
+            <p class="fst-italic py-1 mode-social">
+              with interest and experience in social media management, content creation, and digital communications.
+              Experienced in managing social media accounts for organizations and online businesses, including content
+              planning, post scheduling, and audience engagement. Possess creativity, understand digital trends, and
+              possess basic design skills, content editing, and performance analysis to support branding and engagement.
+            </p>
+
             <div class="row">
               <div class="col-lg-5">
                 <ul>
@@ -105,9 +132,9 @@
               </div>
               <div class="col-lg-5">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age: <span>23</span></strong></li>
+                  <li><i class="bi bi-chevron-right"></i><strong>Age: <span id="age"></span></strong></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Email: <span>anaskhoiri19@gmail.com</span></strong></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance: <span>Available</span></strong></li>
+                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Freelance: <span>Available</span></strong></li> -->
                 </ul>
               </div>
             </div>
@@ -123,40 +150,87 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
+        <!-- ===== WEB DEVELOPER MODE ===== -->
+        <div class="col-12 mode-web">
+          <div class="row gy-4">
 
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-filetype-html"></i>
-            <div class="stats-item">
-              <h3>Front-End Developer</h3>
-              <p>Expert in HTML, CSS, Bootstrap, JavaScript, and Figma (UI/UX Design).</p>
+            <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+              <i class="bi bi-filetype-html"></i>
+              <div class="stats-item">
+                <h3>Front-End Developer</h3>
+                <p>Expert in HTML, CSS, Bootstrap, JavaScript, and Figma (UI/UX Design).</p>
+              </div>
             </div>
-          </div><!-- End Stats Item -->
 
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-filetype-php"></i>
-            <div class="stats-item">
-              <h3>Back-End Developer</h3>
-              <p>Expert in PHP, JavaScript, Laravel, MySQL, and REST API.</p>
+            <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+              <i class="bi bi-filetype-php"></i>
+              <div class="stats-item">
+                <h3>Back-End Developer</h3>
+                <p>Expert in PHP, JavaScript, Laravel, MySQL, and REST API.</p>
+              </div>
             </div>
-          </div><!-- End Stats Item -->
 
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-database"></i>
-            <div class="stats-item">
-              <h3>Data Scientist</h3>
-              <p>Quite proficient in Python, Pandas, NumPy, Machine Learning, and Data Analysis.</p>
+            <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+              <i class="bi bi-database"></i>
+              <div class="stats-item">
+                <h3>Data Scientist</h3>
+                <p>Quite proficient in Python, Pandas, NumPy, Machine Learning, and Data Analysis.</p>
+              </div>
             </div>
-          </div><!-- End Stats Item -->
 
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-people"></i>
-            <div class="stats-item">
-              <h3>Collaboration</h3>
-              <p>Experienced in Teamwork, Leadership, Problem Solving, Team Management.</p>
+            <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+              <i class="bi bi-people"></i>
+              <div class="stats-item">
+                <h3>Collaboration</h3>
+                <p>Experienced in Teamwork, Leadership, Problem Solving, Team Management.</p>
+              </div>
             </div>
-          </div><!-- End Stats Item -->
 
+          </div>
         </div>
+
+        <!-- ===== SOCIAL MEDIA SPECIALIST MODE ===== -->
+        <div class="col-12 mode-social">
+          <div class="row gy-4">
+
+            <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+              <i class="bi bi-instagram"></i>
+              <div class="stats-item">
+                <h3>Social Media Management</h3>
+                <p>Managing Instagram, TikTok, and other platforms for brands and organizations.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+              <i class="bi bi-pencil-square"></i>
+              <div class="stats-item">
+                <h3>Content Creation</h3>
+                <p>Creating engaging visual and written content aligned with brand identity.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+              <i class="bi bi-bar-chart"></i>
+              <div class="stats-item">
+                <h3>Analytics & Insights</h3>
+                <p>Analyzing performance metrics to optimize reach, engagement, and growth.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+              <i class="bi bi-megaphone"></i>
+              <div class="stats-item">
+                <h3>Digital Campaign</h3>
+                <p>Planning and executing social media campaigns to increase brand awareness.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
 
       </div>
 
@@ -175,127 +249,192 @@
 
         <div class="row skills-content skills-animation">
 
-          <div class="col-lg-4">
-            <h3>Front-End Development</h3>
-            <div class="progress">
-              <span class="skill"><span>HTML/CSS</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
+          <!-- ===== WEB DEVELOPER MODE ===== -->
+          <div class="col-12 mode-web">
+            <div class="row">
 
-            <div class="progress">
-              <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
+              <!-- Front-End -->
+              <div class="col-lg-4">
+                <h3>Front-End Development</h3>
 
-            <div class="progress">
-              <span class="skill"><span>Bootstrap</span> <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
+                <div class="progress">
+                  <span class="skill">HTML / CSS <i class="val">90%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" style="width:90%"></div>
+                  </div>
+                </div>
 
-            <div class="progress">
-              <span class="skill"><span>React JS</span> <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
+                <div class="progress">
+                  <span class="skill">JavaScript <i class="val">75%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" style="width:75%"></div>
+                  </div>
+                </div>
 
-            <div class="progress">
-              <span class="skill"><span>Tailwind CSS</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
+                <div class="progress">
+                  <span class="skill">Bootstrap <i class="val">85%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" style="width:85%"></div>
+                  </div>
+                </div>
 
+                <div class="progress">
+                  <span class="skill">Tailwind CSS <i class="val">80%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" style="width:80%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Back-End -->
+              <div class="col-lg-4">
+                <h3>Back-End Development</h3>
+
+                <div class="progress">
+                  <span class="skill">PHP <i class="val">90%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" style="width:90%"></div>
+                  </div>
+                </div>
+
+                <div class="progress">
+                  <span class="skill">Laravel <i class="val">85%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" style="width:85%"></div>
+                  </div>
+                </div>
+
+                <div class="progress">
+                  <span class="skill">MySQL <i class="val">90%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" style="width:90%"></div>
+                  </div>
+                </div>
+
+                <div class="progress">
+                  <span class="skill">REST API <i class="val">75%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" style="width:75%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tools -->
+              <div class="col-lg-4">
+                <h3>Tools</h3>
+
+                <div class="progress">
+                  <span class="skill">Git / GitHub <i class="val">85%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" style="width:85%"></div>
+                  </div>
+                </div>
+
+                <div class="progress">
+                  <span class="skill">Figma <i class="val">80%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" style="width:80%"></div>
+                  </div>
+                </div>
+
+                <div class="progress">
+                  <span class="skill">Canva <i class="val">90%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" style="width:90%"></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
 
-          <div class="col-lg-4">
-            <h3>Back-End Development</h3>
-            <div class="progress">
-              <span class="skill"><span>PHP</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+          <!-- ===== SOCIAL MEDIA SPECIALIST MODE ===== -->
+          <div class="col-12 mode-social">
+            <div class="row">
+
+              <!-- Strategy -->
+              <div class="col-lg-4">
+                <h3>Social Media Strategy</h3>
+
+                <div class="progress">
+                  <span class="skill">Content Planning <i class="val">90%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" style="width:90%"></div>
+                  </div>
+                </div>
+
+                <div class="progress">
+                  <span class="skill">Audience Engagement <i class="val">85%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" style="width:85%"></div>
+                  </div>
+                </div>
+
+                <div class="progress">
+                  <span class="skill">Trend Analysis <i class="val">80%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" style="width:80%"></div>
+                  </div>
+                </div>
               </div>
-            </div><!-- End Skills Item -->
 
-            <div class="progress">
-              <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              <!-- Content -->
+              <div class="col-lg-4">
+                <h3>Content Creation</h3>
+
+                <div class="progress">
+                  <span class="skill">Copywriting <i class="val">85%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" style="width:85%"></div>
+                  </div>
+                </div>
+
+                <div class="progress">
+                  <span class="skill">Canva Design <i class="val">90%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" style="width:90%"></div>
+                  </div>
+                </div>
+
+                <div class="progress">
+                  <span class="skill">Content Editing <i class="val">80%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" style="width:80%"></div>
+                  </div>
+                </div>
               </div>
-            </div><!-- End Skills Item -->
 
+              <!-- Analytics -->
+              <div class="col-lg-4">
+                <h3>Analytics & Tools</h3>
 
-            <div class="progress">
-              <span class="skill"><span>Laravel</span> <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress">
+                  <span class="skill">Instagram Insights <i class="val">80%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" style="width:80%"></div>
+                  </div>
+                </div>
+
+                <div class="progress">
+                  <span class="skill">Meta Business Suite <i class="val">75%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" style="width:75%"></div>
+                  </div>
+                </div>
+
+                <div class="progress">
+                  <span class="skill">Performance Reporting <i class="val">85%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" style="width:85%"></div>
+                  </div>
+                </div>
               </div>
-            </div><!-- End Skills Item -->
 
-            <div class="progress">
-              <span class="skill"><span>MySQL</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>REST API</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-
-          </div>
-
-          <div class="col-lg-4">
-            <h3>Tools</h3>
-
-            <div class="progress">
-              <span class="skill"><span>Git</span> <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>GitHub</span> <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>GitLab</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Figma</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Canva</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
+            </div>
           </div>
 
         </div>
+
 
       </div>
 
@@ -479,81 +618,155 @@
       </div><!-- End Section Title -->
 
       <div class="container">
+        <!-- ================= WEB DEVELOPER PORTFOLIO ================= -->
+        <div class="mode-web">
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <div class="isotope-layout portfolio-isotope" data-isotope-id="web" data-default-filter="*" data-layout="masonry">
 
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-personal">Personal</li>
-            <li data-filter=".filter-team">Team</li>
-          </ul><!-- End Portfolio Filters -->
+            <ul class="portfolio-filters isotope-filters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-personal">Personal</li>
+              <li data-filter=".filter-team">Team</li>
+            </ul>
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="row gy-4 isotope-container">
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-personal">
+                <a href="details/icanprem.html"><img src="assets/img/portfolio/icanprem.png" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4>I CAN PREMIUM</h4>
+                  <p></p>
+                  <a href="assets/img/portfolio/icanprem.png" title="" data-gallery="portfolio-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="details/icanprem.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-personal">
-              <a href="details/icanprem.html"><img src="assets/img/portfolio/icanprem.png" class="img-fluid" alt=""></a>
-              <div class="portfolio-info">
-                <h4>I Can Premium</h4>
-                <p>Website Application Buying and Selling Applications and Premium Accounts</p>
-                <a href="assets/img/portfolio/icanprem.png" title="Website Application Buying and Selling Applications and Premium Accounts" data-gallery="portfolio-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="details/icanprem.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-team">
+                <a href="details/pkpri.html"><img src="assets/img/portfolio/pkpri.png" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4>WEBSITE PKP-RI BANGKALAN</h4>
+                  <p>Website Application for Ordering the PKP-RI Bangkalan Building</p>
+                  <a href="assets/img/portfolio/pkpri.png" title="Website Application for Ordering the PKP-RI Bangkalan Building" data-gallery="portfolio-gallery-team" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="details/pkpri.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-team">
-              <a href="details/pkpri.html"><img src="assets/img/portfolio/pkpri.png" class="img-fluid" alt=""></a>
-              <div class="portfolio-info">
-                <h4>Website PKP-RI Bangkalan</h4>
-                <p>Website Application for Ordering the PKP-RI Bangkalan Building</p>
-                <a href="assets/img/portfolio/pkpri.png" title="Website Application for Ordering the PKP-RI Bangkalan Building" data-gallery="portfolio-gallery-team" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="details/pkpri.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-personal">
+                <a href="details/rs.html"><img src="assets/img/portfolio/rs.png" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4>SISTEM INFORMASI RUMAH SAKIT TELANG SEHAT</h4>
+                  <p>System Website for Telang Hospital Information</p>
+                  <a href="assets/img/portfolio/rs.png" title="System Website for Telang Hospital Information" data-gallery="portfolio-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="details/rs.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-personal">
-              <a href="details/rs.html"><img src="assets/img/portfolio/rs.png" class="img-fluid" alt=""></a>
-              <div class="portfolio-info">
-                <h4>Sistem Informasi Rumah Sakit Telang Sehat</h4>
-                <p>System Website for Telang Hospital Information</p>
-                <a href="assets/img/portfolio/rs.png" title="System Website for Telang Hospital Information" data-gallery="portfolio-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="details/rs.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-personal">
+                <a href="details/vgg19.html"><img src="assets/img/portfolio/vgg19.png" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4>WEBSITE KLASIFIKASI KANKER KULIT</h4>
+                  <p>Website for Skin Cancer Classification Research</p>
+                  <a href="assets/img/portfolio/vgg19.png" title="Website for Skin Cancer Classification Research" data-gallery="portfolio-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="details/vgg19.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-personal">
-              <a href="details/vgg19.html"><img src="assets/img/portfolio/vgg19.png" class="img-fluid" alt=""></a>
-              <div class="portfolio-info">
-                <h4>Website Klasifikasi Kanker Kulit dengan VGG19 </h4>
-                <p>Website for Skin Cancer Classification Research</p>
-                <a href="assets/img/portfolio/vgg19.png" title="Website for Skin Cancer Classification Research" data-gallery="portfolio-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="details/vgg19.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-team">
+                <a href="details/jokotole.html"><img src="assets/img/portfolio/jokotole.png" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4>PPS JOKOTOLE DIKLAT KODIM 0829</h4>
+                  <p>System Website for PPS Jokotole Diklat Kodim</p>
+                  <a href="assets/img/portfolio/jokotole.png" title="System Website for PPS Jokotole Diklat Kodim" data-gallery="portfolio-gallery-team" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="details/jokotole.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-team">
-              <a href="details/jokotole.html"><img src="assets/img/portfolio/jokotole.png" class="img-fluid" alt=""></a>
-              <div class="portfolio-info">
-                <h4>PPS Jokotole Diklat Kodim 0829</h4>
-                <p>System Website for PPS Jokotole Diklat Kodim</p>
-                <a href="assets/img/portfolio/jokotole.png" title="System Website for PPS Jokotole Diklat Kodim" data-gallery="portfolio-gallery-team" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="details/jokotole.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-team">
+                <a href="details/beasiswaku.html"><img src="assets/img/portfolio/beasiswaku.png" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4>BEASISWAKU</h4>
+                  <p>System Website for Scholarship Provider Information</p>
+                  <a href="assets/img/portfolio/beasiswaku.png" title="System Website for Scholarship Provider Information" data-gallery="portfolio-gallery-team" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="details/beasiswaku.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-team">
-              <a href="details/beasiswaku.html"><img src="assets/img/portfolio/beasiswaku.png" class="img-fluid" alt=""></a>
-              <div class="portfolio-info">
-                <h4>Beasiswaku</h4>
-                <p>System Website for Scholarship Provider Information</p>
-                <a href="assets/img/portfolio/beasiswaku.png" title="System Website for Scholarship Provider Information" data-gallery="portfolio-gallery-team" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="details/beasiswaku.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
+            </div><!-- End Portfolio Container -->
 
-          </div><!-- End Portfolio Container -->
-
+          </div>
         </div>
+        <!-- ================= SOCIAL MEDIA SPECIALIST PORTFOLIO ================= -->
+        <div class="mode-social">
+          <div class="isotope-layout portfolio-isotope" data-isotope-id="social" data-default-filter="*" data-layout="masonry">
 
+            <ul class="portfolio-filters isotope-filters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-video">Video</li>
+              <li data-filter=".filter-photo">Photo</li>
+            </ul>
+
+            <div class="row gy-4 isotope-container">
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-video">
+                <a href="details/dongeng.html"><img src="assets/img/portfolio/dongeng.png" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4>CAFE PROMOTION</h4>
+                  <p>Cafe Promotional Video</p>
+                  <a href="assets/img/portfolio/dongeng.png" title="Cafe Promotional Video" data-gallery="portfolio-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="details/dongeng.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-video">
+                <a href="details/covid.html"><img src="assets/img/portfolio/covid.png" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4>SHORT VIDEO</h4>
+                  <p>Short Video About COVID-19</p>
+                  <a href="assets/img/portfolio/covid.png" title="Short Video About COVID-19" data-gallery="portfolio-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="details/covid.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+                <a href="details/logo.html"><img src="assets/img/portfolio/logo.jpg" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4>LOGO DESIGN</h4>
+                  <p>Logo Design For I CAN PREMIUM</p>
+                  <a href="assets/img/portfolio/logo.jpg" title="Logo Design For I CAN PREMIUM" data-gallery="portfolio-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="details/logo.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div><!-- End Portfolio Item -->
+              
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-video">
+                <a href="details/fast.html"><img src="assets/img/portfolio/fast.png" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4>PROMOTIONAL VIDEO</h4>
+                  <p>Promotional Video for FAST Event</p>
+                  <a href="assets/img/portfolio/fast.png" title="Promotional Video for FAST Event" data-gallery="portfolio-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="details/fast.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div><!-- End Portfolio Item -->
+              
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+                <a href="details/idcard.html"><img src="assets/img/portfolio/idcard.png" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4>ID CARD DESIGN</h4>
+                  <p>Id Card Design For FAST Event</p>
+                  <a href="assets/img/portfolio/idcard.png" title="Id Card Design For FAST Event" data-gallery="portfolio-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="details/idcard.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div><!-- End Portfolio Item -->
+              
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+                <a href="details/stiker.html"><img src="assets/img/portfolio/stiker.png" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4>STICKER DESIGN</h4>
+                  <p>Sticker Design For FAST Event</p>
+                  <a href="assets/img/portfolio/stiker.png" title="Sticker Design For FAST Event" data-gallery="portfolio-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="details/stiker.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div><!-- End Portfolio Item -->
+            </div>
+          </div>
+        </div>
       </div>
 
     </section><!-- /Portfolio Section -->
@@ -605,7 +818,11 @@
                 <div class="col-md-6">
                   <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                 </div>
+<<<<<<< HEAD
           
+=======
+
+>>>>>>> b6ced3c (update portfolio: add mode social media & improvements)
                 <div class="col-md-6">
                   <input type="email" name="email" class="form-control" placeholder="Your Email" required>
                 </div>
@@ -622,14 +839,21 @@
                   <div class="loading" style="display:none;">Loading...</div>
                   <div class="error-message" style="display:none;color:red;"></div>
                   <div class="sent-message" style="display:none;color:green;">Your message has been sent. Thank you!</div>
+<<<<<<< HEAD
           
+=======
+
+>>>>>>> b6ced3c (update portfolio: add mode social media & improvements)
                   <button type="submit">Send Message</button>
                 </div>
           
               </div>
             </form>
           </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> b6ced3c (update portfolio: add mode social media & improvements)
 
         </div>
 
@@ -646,6 +870,8 @@
         <a href="https://github.com/airilah" target="_blank"><i class="bi bi-github"></i></a>
         <a href="https://www.linkedin.com/in/anaskhoiri" target="_blank"><i class="bi bi-linkedin"></i></a>
         <a href="https://www.instagram.com/airillah_" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.youtube.com/@anaskhoiri" target="_blank"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.tiktok.com/@airillah_" target="_blank"><i class="bi bi-tiktok"></i></a>
         <a href="mailto:anaskhoiri19@gmail.com" target="_blank">  <i class="bi bi-envelope"></i></a>
       </div>
     </div>
@@ -676,60 +902,222 @@
   <script src="assets/js/main.js"></script>
 
   <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const form = document.querySelector('.php-email-form');
-    if (!form) return;
-  
-    const loadingEl = form.querySelector('.loading');
-    const errorEl   = form.querySelector('.error-message');
-    const successEl = form.querySelector('.sent-message');
-  
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      errorEl.textContent = '';
-      successEl.style.display = 'none';
-      loadingEl.style.display = 'block';
-  
-      const url = form.action;
-      const formData = new FormData(form);
-  
-      fetch(url, {
-        method: 'POST',
-        body: formData,
-        headers: {
-          'Accept': 'application/json' // minta JSON supaya response.json() valid
-        }
-      })
-      .then(response => response.json())
-      .then(data => {
-        loadingEl.style.display = 'none';
-  
-        // Formspree memberi { ok: true, next: "/thanks?..." } saat sukses
-        if (data.ok) {
-          // jika Formspree memberikan 'next' redirect
-          if (data.next) {
-            window.location.href = data.next;
-            return;
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.querySelector('.php-email-form');
+      if (!form) return;
+    
+      const loadingEl = form.querySelector('.loading');
+      const errorEl   = form.querySelector('.error-message');
+      const successEl = form.querySelector('.sent-message');
+    
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        errorEl.textContent = '';
+        successEl.style.display = 'none';
+        loadingEl.style.display = 'block';
+    
+        const url = form.action;
+        const formData = new FormData(form);
+    
+        fetch(url, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json' // minta JSON supaya response.json() valid
           }
-          // atau tampilkan pesan sukses
-          successEl.style.display = 'block';
-          form.reset();
-        } else {
-          // kadang error detail di data; tampilkan pesan
-          const msg = data.error || 'Sorry, there was an error sending the message.';
-          errorEl.textContent = msg;
+        })
+        .then(response => response.json())
+        .then(data => {
+          loadingEl.style.display = 'none';
+    
+          // Formspree memberi { ok: true, next: "/thanks?..." } saat sukses
+          if (data.ok) {
+            // jika Formspree memberikan 'next' redirect
+            if (data.next) {
+              window.location.href = data.next;
+              return;
+            }
+            // atau tampilkan pesan sukses
+            successEl.style.display = 'block';
+            form.reset();
+          } else {
+            // kadang error detail di data; tampilkan pesan
+            const msg = data.error || 'Sorry, there was an error sending the message.';
+            errorEl.textContent = msg;
+            errorEl.style.display = 'block';
+          }
+        })
+        .catch((err) => {
+          loadingEl.style.display = 'none';
+          errorEl.textContent = 'Could not send message. Please try again later.';
           errorEl.style.display = 'block';
-        }
-      })
-      .catch((err) => {
-        loadingEl.style.display = 'none';
-        errorEl.textContent = 'Could not send message. Please try again later.';
-        errorEl.style.display = 'block';
-        console.error('Form submit error:', err);
+          console.error('Form submit error:', err);
+        });
       });
     });
-  });
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("contact-form");
+      const loading = form.querySelector(".loading");
+      const errorMsg = form.querySelector(".error-message");
+      const successMsg = form.querySelector(".sent-message");
+
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        loading.style.display = "block";
+        errorMsg.style.display = "none";
+        successMsg.style.display = "none";
+
+        const formData = new FormData(form);
+
+        try {
+          const response = await fetch(form.action, {
+            method: "POST",
+            body: formData,
+            headers: { "Accept": "application/json" }
+          });
+
+          const result = await response.json();
+
+          loading.style.display = "none";
+
+          if (result.ok) {
+            successMsg.style.display = "block";
+            form.reset();
+          } else {
+            errorMsg.innerHTML = result.error || "Something went wrong, try again!";
+            errorMsg.style.display = "block";
+          }
+
+        } catch (err) {
+          loading.style.display = "none";
+          errorMsg.innerHTML = "Could not send message. Please try again later.";
+          errorMsg.style.display = "block";
+        }
+      });
+    });
+
+
+    function calculateAge(birthDate) {
+      const today = new Date();
+      let age = today.getFullYear() - birthDate.getFullYear();
+      const monthDiff = today.getMonth() - birthDate.getMonth();
+      const dayDiff = today.getDate() - birthDate.getDate();
+
+      if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
+        age--;
+      }
+
+      return age;
+    }
+
+    const birthDate = new Date(2002, 8, 8); 
+    document.getElementById("age").textContent = calculateAge(birthDate);
+
+
+
+    let typedInstance;
+
+    function initTyped(items) {
+      if (typedInstance) {
+        typedInstance.destroy();
+      }
+
+      typedInstance = new Typed('#typedText', {
+        strings: items,
+        typeSpeed: 60,
+        backSpeed: 40,
+        backDelay: 1500,
+        loop: true
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggle = document.getElementById("modeToggle");
+
+      // Default: Web Developer
+      initTyped([
+        "Front-End Developer",
+        "Back-End Developer"
+      ]);
+
+      toggle.addEventListener("change", function () {
+        if (this.checked) {
+          initTyped([
+            "Social Media Specialist",
+            "Content Strategist"
+          ]);
+          document.body.classList.add("social");
+        } else {
+          initTyped([
+            "Front-End Developer",
+            "Back-End Developer"
+          ]);
+          document.body.classList.remove("social");
+        }
+      });
+    });
+
+    document.getElementById("modeToggle").addEventListener("change", function () {
+      document.body.classList.toggle("social", this.checked);
+    });
+    
+    function initIsotope() {
+      document.querySelectorAll('.portfolio-isotope').forEach(layout => {
+        const container = layout.querySelector('.isotope-container');
+        if (!container) return;
+
+        const iso = new Isotope(container, {
+          itemSelector: '.isotope-item',
+          layoutMode: 'masonry'
+        });
+
+        layout.querySelectorAll('.isotope-filters li').forEach(filter => {
+          filter.addEventListener('click', function () {
+            layout.querySelectorAll('.filter-active').forEach(el => el.classList.remove('filter-active'));
+            this.classList.add('filter-active');
+            iso.arrange({ filter: this.getAttribute('data-filter') });
+          });
+        });
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', initIsotope);
+
+    document.getElementById('modeToggle').addEventListener('change', () => {
+      setTimeout(initIsotope, 300);
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggle = document.getElementById("modeToggle");
+      const savedMode = localStorage.getItem("siteMode");
+
+      // === SET MODE SAAT PAGE LOAD ===
+      if (savedMode === "social") {
+        document.body.classList.add("social");
+        toggle.checked = true;
+      } else {
+        document.body.classList.remove("social");
+        toggle.checked = false;
+      }
+
+      // === SIMPAN MODE SAAT TOGGLE DIKLIK ===
+      toggle.addEventListener("change", function () {
+        if (this.checked) {
+          document.body.classList.add("social");
+          localStorage.setItem("siteMode", "social");
+        } else {
+          document.body.classList.remove("social");
+          localStorage.setItem("siteMode", "web");
+        }
+      });
+    });
+
   </script>
+
+>>>>>>> b6ced3c (update portfolio: add mode social media & improvements)
 
 
 </body>
