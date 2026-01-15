@@ -90,12 +90,11 @@
   window.addEventListener('load', aosInit);
 
   /**
-   * Init typed.js
+   * Init typed.js (SAFE)
    */
   const selectTyped = document.querySelector('.typed');
-  if (selectTyped) {
-    let typed_strings = selectTyped.getAttribute('data-typed-items');
-    typed_strings = typed_strings.split(',');
+  if (selectTyped && selectTyped.getAttribute('data-typed-items')) {
+    let typed_strings = selectTyped.getAttribute('data-typed-items').split(',');
     new Typed('.typed', {
       strings: typed_strings,
       loop: true,
@@ -104,6 +103,7 @@
       backDelay: 2000
     });
   }
+
 
   /**
    * Initiate Pure Counter
@@ -143,7 +143,11 @@
     let sort = isotopeItem.getAttribute('data-sort') ?? 'original-order';
 
     let initIsotope;
-    imagesLoaded(isotopeItem.querySelector('.isotope-container'), function() {
+    const isoContainer = isotopeItem.querySelector('.isotope-container');
+    if (!isoContainer) return;
+
+    imagesLoaded(isoContainer, function() {
+
       initIsotope = new Isotope(isotopeItem.querySelector('.isotope-container'), {
         itemSelector: '.isotope-item',
         layoutMode: layout,
