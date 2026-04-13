@@ -676,6 +676,37 @@ body.social .mode-social {
   .hero p {
     font-size: 20px;
   }
+  .mobile-side-by-side {
+    display: flex !important;
+    align-items: flex-start;
+  }
+
+  /* Mengecilkan ukuran gambar slider di mobile */
+  .portfolio-details-slider .swiper-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  /* Menyesuaikan ukuran teks info agar pas di kolom kecil */
+  .portfolio-info {
+    padding: 10px !important;
+  }
+
+  .portfolio-info h5 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .portfolio-info ul li {
+    font-size: 12px;
+    padding-bottom: 5px;
+  }
+  
+  /* Sembunyikan tombol navigasi swiper di mobile agar tidak berantakan */
+  .swiper-button-prev, .swiper-button-next {
+    display: none;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -755,7 +786,6 @@ body.social .mode-social {
   display: block;
   background: none;
   border-radius: 0;
-  pad
 }
 
 .skills .progress .skill {

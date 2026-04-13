@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio Details</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/icon.png" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex flex-column justify-content-center">
+
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="../index.html#home"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="../index.html#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="../index.html#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="../index.html#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        <li><a href="../index.html#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <div class="page-title" data-aos="fade">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li class="current">Portfolio Details</li>
+          </ol>
+        </nav>
+        <h1>Portfolio Details</h1>
+      </div>
+    </div><section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row justify-content-between">
+
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="portfolio-description">
+              <h2>Portfolio Description for Undercover Bot</h2>
+              <h2>1. Project Overview</h2>
+              <p>
+                <strong>Undercover Mobile</strong> is a feature-rich social deduction game built with the <strong>Flutter</strong> framework. The project focuses on digitizing the traditional group gaming experience, eliminating the need for physical cards or a human moderator. Players are assigned secret roles (Citizen or Undercover) and must use verbal strategy and deduction to identify intruders through a dynamic voting system.
+              </p>
+
+              <h2>2. Planning and Requirements Analysis</h2>
+              <ul>
+                <li><strong>Problem Analysis:</strong> Traditional social deduction games often struggle with manual role distribution and the requirement for a non-playing moderator.</li>
+                <li><strong>Proposed Solution:</strong> Development of a "Digital Game Master" app that automates role assignment, word distribution, and game rules enforcement.</li>
+                <li><strong>Target Audience:</strong> Board game enthusiasts and social communities seeking an interactive, portable group activity.</li>
+                <li><strong>Tech Stack:</strong> Leveraging Flutter for a high-performance, cross-platform experience (Android & iOS) with a unified codebase.</li>
+              </ul>
+
+              <h2>3. System Design</h2>
+              <ul>
+                <li><strong>Architecture:</strong> Implemented Clean Architecture combined with MVC patterns to ensure scalability and high code maintainability.</li>
+                <li><strong>UI/UX Design:</strong> Crafted in Figma with a "Mysterious Dark" theme, utilizing card-based navigation for a seamless user journey.</li>
+                <li><strong>Game Logic:</strong> Engineered a custom word-pairing algorithm to maintain game balance by providing semantically similar words to different roles.</li>
+                <li><strong>Data Management:</strong> Utilized JSON structures to manage local word pools and player session data efficiently.</li>
+              </ul>
+
+              <h2>4. Development and Implementation</h2>
+              <ul>
+                <li><strong>Frontend:</strong> Developed with Flutter (Dart), featuring optimized state management and custom animations for role reveals.</li>
+                <li><strong>Backend & Logic:</strong> Integrated Python-based logic for advanced word management and victory condition validation.</li>
+                <li><strong>Services:</strong> Incorporated Firebase for real-time data synchronization and user authentication features.</li>
+                <li><strong>Core Modules:</strong> Developed "Pass and Play" local multiplayer support, automated voting ballots, and dynamic player profile tracking.</li>
+              </ul>
+
+              <h2>5. Testing Phase</h2>
+              <ul>
+                <li><strong>Functional Testing:</strong> Rigorous validation of game mechanics, ensuring zero-error role distribution and accurate win-condition detection.</li>
+                <li><strong>Compatibility Testing:</strong> Verified UI responsiveness across multiple aspect ratios on both Android and iOS devices.</li>
+                <li><strong>User Acceptance Testing (UAT):</strong> Performed group-play simulations to refine game pacing and improve instruction clarity based on user feedback.</li>
+              </ul>
+
+              <h2>6. Deployment and Maintenance</h2>
+              <ul>
+                <li><strong>Production:</strong> Compiled optimized production builds (.apk and .aab) for Google Play Store distribution.</li>
+                <li><strong>Version Control:</strong> Hosted the complete source code on GitHub with comprehensive README documentation for open-source collaboration.</li>
+                <li><strong>Sustainability:</strong> Established a modular update system to allow for easy additions of new word categories and game modes.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="row d-flex d-md-block mobile-side-by-side">
+              <div class="col-6 col-md-12">
+                <div class="portfolio-details-slider swiper init-swiper">
+                  <script type="application/json" class="swiper-config">
+                    {
+                      "loop": true,
+                      "speed": 600,
+                      "autoplay": {
+                        "delay": 5000
+                      },
+                      "slidesPerView": "auto",
+                      "navigation": {
+                        "nextEl": ".swiper-button-next",
+                        "prevEl": ".swiper-button-prev"
+                      },
+                      "pagination": {
+                        "el": ".swiper-pagination",
+                        "type": "bullets",
+                        "clickable": true
+                      }
+                    }
+                  </script>
+                  <div class="swiper-wrapper align-items-center">
+                    <div class="swiper-slide">
+                      <img src="../assets/img/porto-details/undercover1.jpg" alt="Home Screen">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="../assets/img/porto-details/undercover2.jpg" alt="Role Distribution">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="../assets/img/porto-details/undercover3.jpg" alt="Gameplay">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="../assets/img/porto-details/undercover4.jpg" alt="Discussion Phase">
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-12">
+                <div class="portfolio-info mt-0 mt-md-3">
+                  <h5>Project Information</h5>
+                  <ul>
+                    <li><strong>Title:</strong> Undercover Bot</li>
+                    <li><strong>Category:</strong> Personal</li>
+                    <li><strong>Year:</strong> 2026</li>
+                    <li><strong>Repository:</strong> <a href="https://github.com/airilah/undercover-mobile" target="_blank">GitHub Link</a></li>
+                    <li><strong>Project URL:</strong> <a href="t.me/gameundercover_bot" target="_blank">Bot</a></li>
+                    <li><a href="t.me/gameundercover_bot" class="btn-visit align-self-start" target="_blank">Visit Link</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section></main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <h3 class="sitename">Anas Khoiri Abdillah</h3>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://github.com/airilah" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/anaskhoiri" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.instagram.com/airillah_" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.youtube.com/@anaskhoiri" target="_blank"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.tiktok.com/@airillah_" target="_blank"><i class="bi bi-tiktok"></i></a>
+        <a href="mailto:anaskhoiri19@gmail.com" target="_blank">  <i class="bi bi-envelope"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">Anas Khoiri</strong> <span>All Rights Reserved</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio Details</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/icon.png" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex flex-column justify-content-center">
+
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="../index.html#home"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="../index.html#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="../index.html#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="../index.html#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        <li><a href="../index.html#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <div class="page-title" data-aos="fade">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li class="current">Portfolio Details</li>
+          </ol>
+        </nav>
+        <h1>Portfolio Details</h1>
+      </div>
+    </div><section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row justify-content-between">
+
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="portfolio-description">
+              <h2>Portfolio Description for Analisis Saham Bot</h2>
+              <h2>1. Project Overview</h2>
+              <p>
+                <strong>Analisis Saham Bot</strong> is an automated stock analysis system powered by Python, designed to assist investors in making data-driven decisions. 
+                The system integrates traditional technical analysis with Artificial Intelligence (AI) to provide comprehensive market insights, including real-time chart pattern detection and news sentiment analysis, all delivered through a seamless Telegram Bot interface.
+              </p>
+
+              <h2>2. Planning and Objectives</h2>
+              <ul>
+                <li><strong>Problem Statement:</strong> Investors often struggle to monitor hundreds of stocks manually and filter relevant news for quick fundamental and technical assessments.</li>
+                <li><strong>Project Goal:</strong> To create an automated "Analyst Assistant" capable of scanning the market and delivering ready-to-use reports instantly.</li>
+                <li><strong>Core Objectives:</strong> Automation of technical indicator calculations, integration of AI-driven sentiment analysis, and automated generation of price charts.</li>
+                <li><strong>Target Platform:</strong> Telegram, chosen for its speed, accessibility, and robust support for media-rich bot interactions.</li>
+              </ul>
+
+              <h2>3. System Design</h2>
+              <ul>
+                <li><strong>Modular Architecture:</strong> The system is designed with a modular approach, separating concerns into specific scripts: <code>data.py</code> (data fetching), <code>indicators.py</code> (mathematical logic), and <code>ai_model.py</code> (NLP processing).</li>
+                <li><strong>Data Flow Pipeline:</strong> Market data extraction (API/Scraping) &rarr; technical indicator processing &rarr; AI sentiment evaluation &rarr; chart visualization &rarr; automated notification.</li>
+                <li><strong>Integration Logic:</strong> Designed to process complex financial data and convert it into simplified, actionable insights for the end-user.</li>
+              </ul>
+
+              <h2>4. Development and Implementation</h2>
+              <ul>
+                <li><strong>Core Engine:</strong> Developed using Python with <code>Pandas</code> for high-performance data manipulation and <code>Matplotlib</code> for financial chart visualization.</li>
+                <li><strong>AI Sentiment Module:</strong> Integrated Large Language Models (LLM) through the <code>ai_model.py</code> module to summarize business news and determine market sentiment (Positive/Neutral/Negative).</li>
+                <li><strong>Quantitative Features:</strong> Built a <code>backtest.py</code> system to validate trading strategies against historical data, ensuring strategy reliability.</li>
+                <li><strong>Real-time Scanning:</strong> Engineered a market scanner that filters emits based on specific technical criteria in seconds.</li>
+              </ul>
+
+              <h2>5. Testing Phase</h2>
+              <ul>
+                <li><strong>Algorithm Validation:</strong> Rigorous cross-checking of technical indicator values (RSI, MACD, etc.) against industry-standard trading platforms.</li>
+                <li><strong>NLP Accuracy:</strong> Evaluated the AI's precision in classifying financial news and summarizing market reports.</li>
+                <li><strong>Latency Testing:</strong> Measured the bot's response time during high market volatility to ensure timely alert delivery.</li>
+              </ul>
+
+              <h2>6. Deployment and Monitoring</h2>
+              <ul>
+                <li><strong>Execution Environment:</strong> Deployed on a Cloud VPS using Python virtual environments to ensure dependency consistency.</li>
+                <li><strong>Automation:</strong> Configured <code>main.py</code> to run continuously, monitoring the Indonesia Stock Exchange (IDX) during market hours.</li>
+                <li><strong>Error Handling:</strong> Implemented robust logging to monitor API connection health and automated recovery for data fetching tasks.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="row d-flex d-md-block mobile-side-by-side">
+              <div class="col-6 col-md-12">
+                <div class="portfolio-details-slider swiper init-swiper">
+                  <script type="application/json" class="swiper-config">
+                    {
+                      "loop": true,
+                      "speed": 600,
+                      "autoplay": {
+                        "delay": 5000
+                      },
+                      "slidesPerView": "auto",
+                      "navigation": {
+                        "nextEl": ".swiper-button-next",
+                        "prevEl": ".swiper-button-prev"
+                      },
+                      "pagination": {
+                        "el": ".swiper-pagination",
+                        "type": "bullets",
+                        "clickable": true
+                      }
+                    }
+                  </script>
+                  <div class="swiper-wrapper align-items-center">
+                    <div class="swiper-slide">
+                      <img src="../assets/img/porto-details/saham1.jpg" alt="Home Screen">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="../assets/img/porto-details/saham2.jpg" alt="Role Distribution">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="../assets/img/porto-details/saham3.jpg" alt="Gameplay">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="../assets/img/porto-details/saham4.jpg" alt="Discussion Phase">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="../assets/img/porto-details/saham5.jpg" alt="Discussion Phase">
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-12">
+                <div class="portfolio-info mt-0 mt-md-3">
+                  <h5>Project Information</h5>
+                  <ul>
+                    <li><strong>Title:</strong> Analisis Saham Bot</li>
+                    <li><strong>Category:</strong> Personal</li>
+                    <li><strong>Year:</strong> 2026</li>
+                    <li><strong>Repository:</strong> <a href="https://github.com/airilah/analisissahambot" target="_blank">GitHub Link</a></li>
+                    <li><strong>Project URL:</strong> <a href="t.me/airilsahambot" target="_blank">Bot</a></li>
+                    <li><a href="t.me/airilsahambot" class="btn-visit align-self-start" target="_blank">Visit Link</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section></main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <h3 class="sitename">Anas Khoiri Abdillah</h3>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://github.com/airilah" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/anaskhoiri" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.instagram.com/airillah_" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.youtube.com/@anaskhoiri" target="_blank"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.tiktok.com/@airillah_" target="_blank"><i class="bi bi-tiktok"></i></a>
+        <a href="mailto:anaskhoiri19@gmail.com" target="_blank">  <i class="bi bi-envelope"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">Anas Khoiri</strong> <span>All Rights Reserved</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
